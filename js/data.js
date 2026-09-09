@@ -10,7 +10,7 @@ const portfolioData = {
       badge: "DATA ENGINEER",
       titleLine1: "ENGENHARIA DE DADOS, BI E",
       titleGradient: "ARQUITETURAS ESCALÁVEIS",
-      description: "Construção de pipelines de dados de alta performance, arquiteturas cloud, data warehouses, dashboards de tempo real e automação para transformar dados brutos em inteligência estratégica.",
+      description: "Parceiro estratégico de negócios na conversão de dados brutos em inteligência acionável. Desenvolvo arquiteturas em nuvem e pipelines de alta performance projetados para dar suporte ao crescimento escalável, permitindo que a liderança tome decisões baseadas em dados sólidos e acionáveis.",
       viewProjects: "Ver projetos",
       getInTouch: "Entre em contato"
     },
@@ -72,7 +72,7 @@ const portfolioData = {
       badge: "DATA ENGINEER",
       titleLine1: "DATA ENGINEERING, BI AND",
       titleGradient: "SCALABLE ARCHITECTURES",
-      description: "Specialist in building high-performance data pipelines, cloud architectures, data warehouses, real-time dashboards, and automation to turn raw data into strategic intelligence.",
+      description: "Strategic business partner converting raw data into actionable intelligence. I design high-performance cloud architectures and pipelines built to support scalable growth, empowering leadership to make decisions grounded in solid, actionable data.",
       viewProjects: "View projects",
       getInTouch: "Get in touch"
     },
