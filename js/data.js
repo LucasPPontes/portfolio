@@ -123,6 +123,68 @@ const portfolioData = {
       name: "Lucas Pontes"
     }
   },
+  es: {
+    header: {
+      about: "Sobre mí",
+      projects: "Proyectos",
+      contact: "Contacto",
+      getInTouch: "Ponte en contacto"
+    },
+    hero: {
+      badge: "INGENIERO DE DATOS",
+      titleLine1: "INGENIERÍA DE DATOS, BI Y",
+      titleGradient: "ARQUITECTURAS ESCALABLES",
+      description: "Socio estratégico de negocios en la conversión de datos brutos en inteligencia accionable. Desarrollo arquitecturas en la nube y pipelines de alto rendimiento diseñados para respaldar el crecimiento escalable, permitiendo a los líderes tomar decisiones basadas en datos sólidos.",
+      viewProjects: "Ver proyectos",
+      getInTouch: "Ponte en contacto"
+    },
+    about: {
+      badge: "QUIÉN SOY",
+      title: "Sobre Mí",
+      subtitle: "Los datos son mi lenguaje — transformo la complejidad en claridad.",
+      cardTitle: "Mi Trayectoria",
+      paragraphs: [
+        "Soy Lucas Pontes, profesional de datos con más de 4 años de experiencia en el área. Graduado en Análisis y Desarrollo de Sistemas, migré a los datos durante una pasantía al darme cuenta del impacto que este campo tiene en las decisiones de negocio. Complementé mi formación con un posgrado en Ciencia de Datos y Big Data Analytics, uniendo la base de ingeniería de software con la profundidad analítica exigida por proyectos modernos.",
+        "Hoy construyo pipelines ETL/ELT, automatizo procesos con Python y orquesto flujos de trabajo con Airflow y dbt, siempre con mentalidad DataOps — tratando la confiabilidad, observabilidad y reproducibilidad como pilares centrales de cada solución. Busco desafíos que unan esta base de ingeniería con la construcción de datos como producto: pipelines probables, monitoreables y confiables."
+      ],
+      highlights: [
+        {
+          title: "Lenguajes y Bases de Datos",
+          description: "Python, SQL y SAP HANA para manipulación, consulta optimizada y modelado de datos en entornos analíticos y transaccionales."
+        },
+        {
+          title: "Ingeniería de Datos y DataOps",
+          description: "Pentaho, Airflow, dbt, Docker y Linux para la construcción de pipelines ETL/ELT automatizados, orquestación y observabilidad DataOps."
+        },
+        {
+          title: "Inteligencia de Negocios (BI)",
+          description: "Power BI y SAP Analytics Cloud para el desarrollo de dashboards ejecutivos interactivos, modelado dimensional (Star y Snowflake) y reportes gerenciales."
+        },
+        {
+          title: "Big Data y Cloud",
+          description: "AWS, Databricks, Apache Spark y Terraform para procesamiento distribuido de grandes volúmenes de datos, creación de Data Lakes escalables y automatización en la nube."
+        }
+      ]
+    },
+    projects: {
+      badge: "PROYECTOS",
+      title: "Proyectos",
+      subtitle: "Desafíos reales transformados en soluciones prácticas a través de proyectos independientes.",
+      viewDetails: "Ver detalles",
+      github: "GitHub"
+    },
+    contact: {
+      badge: "CONTACTO",
+      title: "Ponte en Contacto",
+      subtitle: "¿Tienes un proyecto en mente, quieres intercambiar ideas sobre datos o explorar oportunidades de colaboración? ¡Estoy disponible y me encantaría escucharte!",
+      sendEmail: "Enviar correo",
+      linkedin: "LinkedIn",
+      github: "GitHub"
+    },
+    footer: {
+      name: "Lucas Pontes"
+    }
+  },
   projects: [
     {
       id: "project-1",
@@ -132,11 +194,13 @@ const portfolioData = {
       tags: ["Apache Airflow", "Data Warehouse", "Python", "PostgreSQL", "FastAPI"],
       title: {
         pt: "Data Warehouse & Pipelines ETL com Apache Airflow",
-        en: "Data Warehouse & ETL Pipelines with Apache Airflow"
+        en: "Data Warehouse & ETL Pipelines with Apache Airflow",
+        es: "Data Warehouse & Pipelines ETL con Apache Airflow"
       },
       description: {
         pt: "Arquitetura de Data Warehouse em PostgreSQL alimentada por 5 DAGs automáticas no Apache Airflow 3.3, integrando dados de ERP e API RESTful em FastAPI.",
-        en: "PostgreSQL Data Warehouse architecture powered by 5 automated Apache Airflow 3.3 DAGs, consolidating ERP schemas and FastAPI REST endpoints."
+        en: "PostgreSQL Data Warehouse architecture powered by 5 automated Apache Airflow 3.3 DAGs, consolidating ERP schemas and FastAPI REST endpoints.",
+        es: "Arquitectura de Data Warehouse en PostgreSQL alimentada por 5 DAGs automáticas en Apache Airflow 3.3, consolidando esquemas de ERP y endpoints RESTful en FastAPI."
       },
       summary: {
         pt: {
@@ -182,6 +246,28 @@ const portfolioData = {
             title: "Business Impact",
             description: "Centralization of enterprise KPIs into a single reliable repository, elimination of manual reporting bottlenecks, and enhanced decision-making."
           }
+        },
+        es: {
+          challenge: {
+            title: "El Desafío",
+            description: "Datos operacionales de ERP fragmentados en múltiples sectores (ventas, finanzas, RRHH, legal, soporte), dificultando la generación de reportes consolidados para la dirección."
+          },
+          solution: {
+            title: "La Solución",
+            description: "Construcción de una arquitectura centralizada de datos que automatiza la recolección, limpieza y consolidación de información empresarial en reportes analíticos confiables."
+          },
+          highlights: {
+            title: "Aspectos Clave",
+            items: [
+              "Pipelines de datos automatizados y programados en Apache Airflow.",
+              "Consolidación de datos operacionales de múltiples departamentos en un Data Warehouse central.",
+              "API REST segura con control de acceso para el consumo de datos."
+            ]
+          },
+          impact: {
+            title: "Impacto en el Negocio",
+            description: "Centralización de KPIs en un repositorio confiable, eliminación de reportes manuales y soporte a la toma de decisiones estratégicas."
+          }
         }
       }
     },
@@ -193,11 +279,13 @@ const portfolioData = {
       tags: ["Python", "FastAPI", "Docker", "Terraform", "LocalStack", "AWS Lambda", "AWS Kinesis", "AWS S3"],
       title: {
         pt: "IoT Sensor Telemetry - Pipeline de Dados em Tempo Real",
-        en: "IoT Sensor Telemetry - Real-Time Data Pipeline"
+        en: "IoT Sensor Telemetry - Real-Time Data Pipeline",
+        es: "IoT Sensor Telemetry - Pipeline de Datos en Tiempo Real"
       },
       description: {
         pt: "Pipeline de Engenharia de Dados em tempo real containerizado para telemetria de sensores IoT, com simulação de anomalias em FastAPI, streaming via AWS Kinesis/Firehose e IaC com Terraform no LocalStack.",
-        en: "Containerized real-time data engineering pipeline for IoT sensor telemetry, featuring anomaly simulation in FastAPI, AWS Kinesis/Firehose streaming, and Terraform IaC on LocalStack."
+        en: "Containerized real-time data engineering pipeline for IoT sensor telemetry, featuring anomaly simulation in FastAPI, AWS Kinesis/Firehose streaming, and Terraform IaC on LocalStack.",
+        es: "Pipeline de Ingeniería de Datos en tiempo real contenedorizado para telemetría de sensores IoT, con simulación de anomalías en FastAPI, streaming vía AWS Kinesis/Firehose e IaC con Terraform en LocalStack."
       },
       summary: {
         pt: {
@@ -243,6 +331,28 @@ const portfolioData = {
             title: "Business Impact",
             description: "High-performance industrial asset monitoring, early critical fault detection, and significant cloud development cost savings via local emulation."
           }
+        },
+        es: {
+          challenge: {
+            title: "El Desafío",
+            description: "Ingestar y procesar continuamente grandes volúmenes de datos de telemetría de sensores industriales con anomalías operacionales en tiempo real, manteniendo costo cero en desarrollo local."
+          },
+          solution: {
+            title: "La Solución",
+            description: "Arquitectura serverless de streaming de datos contenedorizada que simula sensores industriales, programa recolecciones y persiste telemetría en un Data Lake en Amazon S3."
+          },
+          highlights: {
+            title: "Aspectos Clave",
+            items: [
+              "Simulación de sensores IoT con inyección automática de anomalías operacionales (picos de temperatura, caídas de presión, valores nulos).",
+              "Pipeline de streaming serverless integrando EventBridge, AWS Lambda, Amazon Kinesis y Data Firehose hacia S3 Data Lake.",
+              "Infraestructura como Código (IaC) totalmente automatizada con Terraform ejecutada 100% localmente en Docker mediante LocalStack."
+            ]
+          },
+          impact: {
+            title: "Impacto en el Negocio",
+            description: "Monitoreo de activos industriales de alto rendimiento, detección temprana de fallas críticas y reducción drástica en costos de desarrollo en la nube."
+          }
         }
       }
     },
@@ -254,11 +364,13 @@ const portfolioData = {
       tags: ["Apache Spark", "PySpark", "Python", "Streamlit", "GenAI", "Docker"],
       title: {
         pt: "Modelagem de Crescimento Agrícola com Apache Spark, Streamlit e GenAI",
-        en: "Agricultural Growth Modeling with Apache Spark, Streamlit & GenAI"
+        en: "Agricultural Growth Modeling with Apache Spark, Streamlit & GenAI",
+        es: "Modelado de Crecimiento Agrícola con Apache Spark, Streamlit y GenAI"
       },
       description: {
         pt: "Plataforma de Big Data Analytics e IA Generativa (Google Gemini / OpenAI) containerizada com Apache Spark 3.5.3 para modelagem de crescimento de culturas agrícolas e geração automática de diagnósticos agronômicos.",
-        en: "Containerized Big Data Analytics & Generative AI platform (Google Gemini / OpenAI) powered by Apache Spark 3.5.3 for crop growth modeling and automated agronomic insights."
+        en: "Containerized Big Data Analytics & Generative AI platform (Google Gemini / OpenAI) powered by Apache Spark 3.5.3 for crop growth modeling and automated agronomic insights.",
+        es: "Plataforma de Big Data Analytics e IA Generativa (Google Gemini / OpenAI) contenedorizada con Apache Spark 3.5.3 para modelado de crecimiento de cultivos y generación de diagnósticos agronómicos."
       },
       summary: {
         pt: {
@@ -304,6 +416,28 @@ const portfolioData = {
             title: "Business Impact",
             description: "Accelerated crop data analysis, crop yield protection, and data-driven farming strategy."
           }
+        },
+        es: {
+          challenge: {
+            title: "El Desafío",
+            description: "Procesamiento lento de datos de campo (clima, suelo y desarrollo de cultivos) y falta de análisis automatizados para la gestión agrícola."
+          },
+          solution: {
+            title: "La Solución",
+            description: "Plataforma de análisis de datos agrícolas e inteligencia artificial que evalúa el crecimiento de cultivos y genera diagnósticos agronómicos automatizados para apoyar decisiones de campo."
+          },
+          highlights: {
+            title: "Aspectos Clave",
+            items: [
+              "Procesamiento rápido de grandes volúmenes de datos agrícolas.",
+              "Panel interactivo con evolución del crecimiento según tipo de cultivo y suelo.",
+              "Asistente de Inteligencia Artificial para la generación automática de diagnósticos agronómicos."
+            ]
+          },
+          impact: {
+            title: "Impacto en el Negocio",
+            description: "Agilidad en el análisis de cosechas, prevención de pérdidas en campo y decisiones estratégicas basadas en datos e IA."
+          }
         }
       }
     },
@@ -315,11 +449,13 @@ const portfolioData = {
       tags: ["Python", "FastAPI", "Streamlit", "MinIO", "ChromaDB", "Google Gemini", "OpenAI", "Docker"],
       title: {
         pt: "Assistente RAG com MinIO, FastAPI e Streamlit",
-        en: "RAG Assistant with MinIO, FastAPI & Streamlit"
+        en: "RAG Assistant with MinIO, FastAPI & Streamlit",
+        es: "Asistente RAG con MinIO, FastAPI y Streamlit"
       },
       description: {
         pt: "Pipeline de Retrieval-Augmented Generation (RAG) para leitura, indexação vetorial no ChromaDB e busca semântica em PDFs armazenados no MinIO S3, integrado a LLMs (Gemini/OpenAI) e FastAPI.",
-        en: "Retrieval-Augmented Generation (RAG) pipeline for PDF document indexing in ChromaDB, S3 object storage in MinIO, and semantic search powered by Gemini/OpenAI & FastAPI."
+        en: "Retrieval-Augmented Generation (RAG) pipeline for PDF document indexing in ChromaDB, S3 object storage in MinIO, and semantic search powered by Gemini/OpenAI & FastAPI.",
+        es: "Pipeline de Generación Aumentada por Recuperación (RAG) para lectura, indexación vectorial en ChromaDB y búsqueda semántica en PDFs almacenados en MinIO S3, integrado a LLMs (Gemini/OpenAI) y FastAPI."
       },
       summary: {
         pt: {
@@ -365,6 +501,28 @@ const portfolioData = {
             title: "Business Impact",
             description: "Extreme efficiency in document intelligence retrieval, elimination of LLM hallucinations via grounded RAG context, and streamlined contract analysis."
           }
+        },
+        es: {
+          challenge: {
+            title: "El Desafío",
+            description: "Dificultad para extraer respuestas precisas y consultar grandes volúmenes de documentos contractuales y reportes en PDF de forma rápida y confiable."
+          },
+          solution: {
+            title: "La Solución",
+            description: "Sistema RAG completo contenedorizado que almacena PDFs en MinIO S3, realiza búsqueda vectorial en ChromaDB y genera respuestas fundamentadas con citas directas de los documentos fuente."
+          },
+          highlights: {
+            title: "Aspectos Clave",
+            items: [
+              "Almacenamiento de objetos S3 mediante MinIO contenedorizado e indexación vectorial por fragmentos de texto en ChromaDB.",
+              "Integración con LLMs (Google Gemini y OpenAI) con validación de clave API en tiempo real y citación explícita de documentos fuente.",
+              "Interfaz conversacional web en Streamlit con carga directa de PDFs y backend asíncrono en FastAPI."
+            ]
+          },
+          impact: {
+            title: "Impacto en el Negocio",
+            description: "Extrema eficiencia en la consulta de inteligencia documental, eliminación de alucinaciones mediante contexto RAG estructurado y agilidad en el análisis de contratos."
+          }
         }
       }
     },
@@ -376,11 +534,13 @@ const portfolioData = {
       tags: ["FastAPI", "PostgreSQL", "Streamlit", "Docker", "Python", "Plotly"],
       title: {
         pt: "CoreFin Analytics - Painel de Finanças Corporativas",
-        en: "CoreFin Analytics - Corporate Finance Dashboard"
+        en: "CoreFin Analytics - Corporate Finance Dashboard",
+        es: "CoreFin Analytics - Panel de Finanzas Corporativas"
       },
       description: {
         pt: "Pipeline de Engenharia de Dados e Analytics Financeiro em Arquitetura Medalhão (Bronze, Silver, Gold no PostgreSQL), com API REST em FastAPI e painel interativo em Streamlit.",
-        en: "Data Engineering & Financial Analytics Pipeline based on Medallion Architecture (Bronze, Silver, Gold in PostgreSQL), with FastAPI REST server and Streamlit interactive dashboard."
+        en: "Data Engineering & Financial Analytics Pipeline based on Medallion Architecture (Bronze, Silver, Gold in PostgreSQL), with FastAPI REST server and Streamlit interactive dashboard.",
+        es: "Pipeline de Ingeniería de Datos y Analytics Financiero en Arquitectura Medallón (Bronze, Silver, Gold en PostgreSQL), con API REST en FastAPI y panel interactivo en Streamlit."
       },
       summary: {
         pt: {
@@ -426,6 +586,28 @@ const portfolioData = {
             title: "Business Impact",
             description: "Unified and highly reliable corporate financial metrics, delivering real-time executive visibility and strategic agility."
           }
+        },
+        es: {
+          challenge: {
+            title: "El Desafío",
+            description: "Fragmentación y falta de estandarización en datos financieros corporativos (tesorería, estado de resultados y cuentas por cobrar/pagar), dificultando la consolidación ejecutiva."
+          },
+          solution: {
+            title: "La Solución",
+            description: "Solución de ingeniería de datos que organiza la información en capas progresivas de limpieza y agregación, ofreciendo reportes ejecutivos centralizados en un panel interactivo."
+          },
+          highlights: {
+            title: "Aspectos Clave",
+            items: [
+              "Pipeline en 3 capas de datos en PostgreSQL para tratamiento, deduplicación y cálculo de indicadores estratégicos.",
+              "Panel web interactivo en Streamlit con navegación multipágina y visualización gráfica de KPIs, Estado de Resultados, Flujo de Caja y Matriz de Riesgo.",
+              "Servidor de aplicación en FastAPI para automatizar transformaciones e integrar servicios en contenedores Docker."
+            ]
+          },
+          impact: {
+            title: "Impacto en el Negocio",
+            description: "Consolidación y alta confiabilidad en métricas financieras corporativas, garantizando visibilidad ejecutiva en tiempo real y agilidad estratégica."
+          }
         }
       }
     },
@@ -437,11 +619,13 @@ const portfolioData = {
       tags: ["Posit Shiny", "Python", "FastAPI", "Plotly", "Pandas", "Docker"],
       title: {
         pt: "Hub Executivo Unificado: CRM & Acompanhamento de SLA",
-        en: "Unified Executive Hub: CRM & SLA Tracking"
+        en: "Unified Executive Hub: CRM & SLA Tracking",
+        es: "Hub Ejecutivo Unificado: CRM y Control de SLA"
       },
       description: {
         pt: "Painel analítico reativo em Posit Shiny e FastAPI unificando inteligência de vendas (CRM, MRR, Funil) e gestão operacional de atendimento e SLA (MTTA/MTTR, franquia de horas e contratos).",
-        en: "Reactive analytics dashboard built with Posit Shiny and FastAPI unifying sales intelligence (CRM, MRR, Pipeline) and operational SLA & support contract management."
+        en: "Reactive analytics dashboard built with Posit Shiny and FastAPI unifying sales intelligence (CRM, MRR, Pipeline) and operational SLA & support contract management.",
+        es: "Panel analítico reactivo en Posit Shiny y FastAPI que unifica inteligencia de ventas (CRM, MRR, Embudo) y gestión operacional de atención y SLA (MTTA/MTTR, horas de contrato y servicio)."
       },
       summary: {
         pt: {
@@ -487,6 +671,28 @@ const portfolioData = {
             title: "Business Impact",
             description: "Full 360° client health visibility, elimination of unbilled overage hour revenue loss, and streamlined operational monitoring."
           }
+        },
+        es: {
+          challenge: {
+            title: "El Desafío",
+            description: "Información comercial de ventas y datos de soporte operativo desconectados, dificultando el control de contratos, retención de clientes e identificación de exceso de horas contratadas."
+          },
+          solution: {
+            title: "La Solución",
+            description: "Panel ejecutivo unificado desarrollado con Posit Shiny y FastAPI que integra en 8 vistas el seguimiento del ciclo de ventas, salud del cliente y soporte operativo."
+          },
+          highlights: {
+            title: "Aspectos Clave",
+            items: [
+              "Módulo CRM con indicadores de ingresos recurrentes (MRR/ARR), embudo de ventas y matriz de salud del cliente (NPS/Health Score).",
+              "Módulo de SLA y Contratos con métricas de tiempo de respuesta (MTTA/MTTR), ritmo de consumo de horas y estimaciones de facturación extra.",
+              "Interfaz reactiva con navegación modular, cambio instantáneo entre Modo Oscuro/Claro y gráficos Plotly autoajustables."
+            ]
+          },
+          impact: {
+            title: "Impacto en el Negocio",
+            description: "Visibilidad 360° de la salud de los clientes, eliminación de pérdidas por horas extras no facturadas y agilidad en el monitoreo operacional."
+          }
         }
       }
     },
@@ -498,11 +704,13 @@ const portfolioData = {
       tags: ["Power BI", "Star Schema", "DAX", "Modelagem Dimensional"],
       title: {
         pt: "Dashboard de Vendas & Performance de Mercado",
-        en: "Sales & Market Performance Dashboard"
+        en: "Sales & Market Performance Dashboard",
+        es: "Dashboard de Ventas y Rendimiento de Mercado"
       },
       description: {
         pt: "Dashboard executivo em Power BI com modelagem Star Schema (fato_vendas + 4 dimensões), análise estratégica comercial, evolução temporal de faturamento e lucro, performance regional e ranking de produtos.",
-        en: "Executive Power BI dashboard featuring Star Schema dimensional modeling (fact_sales + 4 dimensions), commercial strategy insights, time intelligence revenue/profit evolution, and regional performance."
+        en: "Executive Power BI dashboard featuring Star Schema dimensional modeling (fact_sales + 4 dimensions), commercial strategy insights, time intelligence revenue/profit evolution, and regional performance.",
+        es: "Dashboard ejecutivo en Power BI con modelado Star Schema (fact_sales + 4 dimensiones), análisis comercial estratégico, evolución temporal de ventas y margen, rendimiento regional y ranking de productos."
       },
       summary: {
         pt: {
@@ -548,6 +756,28 @@ const portfolioData = {
             title: "Business Impact",
             description: "Fast identification of top market opportunities, inventory optimization, and increased sales team efficiency."
           }
+        },
+        es: {
+          challenge: {
+            title: "El Desafío",
+            description: "Información comercial dispersa en múltiples hojas de cálculo, dificultando el análisis de rentabilidad por producto, región o vendedor."
+          },
+          solution: {
+            title: "La Solución",
+            description: "Panel ejecutivo interactivo que consolida ventas, márgenes de ganancia y desempeño por equipo y región para decisiones comerciales rápidas y enfocadas."
+          },
+          highlights: {
+            title: "Aspectos Clave",
+            items: [
+              "Visión general consolidada de ingresos, margen de beneficio y volumen total de pedidos.",
+              "Ranking interactivo de productos más vendidos y categorías más rentables.",
+              "Comparativa regional de ventas y seguimiento de metas del equipo comercial."
+            ]
+          },
+          impact: {
+            title: "Impacto en el Negocio",
+            description: "Rápida identificación de las mejores oportunidades de mercado, optimización de inventarios y mayor eficiencia del equipo de ventas."
+          }
         }
       }
     },
@@ -559,11 +789,13 @@ const portfolioData = {
       tags: ["Power BI", "DAX", "Snowflake Schema", "Data Warehouse"],
       title: {
         pt: "Dashboard de Acompanhamento de Projetos",
-        en: "Project Tracking & Management Dashboard"
+        en: "Project Tracking & Management Dashboard",
+        es: "Dashboard de Seguimiento y Gestión de Proyectos"
       },
       description: {
         pt: "Dashboard completo em Power BI com arquitetura multidimensional Snowflake Schema para acompanhamento de desenvolvimento de software, burndown de sprints e rastreamento de defeitos.",
-        en: "Comprehensive Power BI dashboard built on a multidimensional Snowflake Schema for software development management, sprint burndown tracking, and defect/quality monitoring."
+        en: "Comprehensive Power BI dashboard built on a multidimensional Snowflake Schema for software development management, sprint burndown tracking, and defect/quality monitoring.",
+        es: "Dashboard completo en Power BI con arquitectura multidimensional Snowflake Schema para gestión de desarrollo de software, burndown de sprints y monitoreo de defectos y calidad."
       },
       summary: {
         pt: {
@@ -608,6 +840,28 @@ const portfolioData = {
           impact: {
             title: "Business Impact",
             description: "Delivery predictability, complete stakeholder transparency, and continuous software release quality improvement."
+          }
+        },
+        es: {
+          challenge: {
+            title: "El Desafío",
+            description: "Falta de visibilidad sobre el ritmo de entregas del equipo de software, consumo del presupuesto de horas y tasa de errores en pruebas."
+          },
+          solution: {
+            title: "La Solución",
+            description: "Panel gerencial para monitorear el avance de proyectos de software, controlar el presupuesto de horas y rastrear la calidad de las entregas."
+          },
+          highlights: {
+            title: "Aspectos Clave",
+            items: [
+              "Seguimiento en tiempo real de la velocidad de entrega del equipo.",
+              "Control comparativo entre horas estimadas y horas registradas.",
+              "Monitoreo de bugs e incidentes con tiempo medio de resolución."
+            ]
+          },
+          impact: {
+            title: "Impacto en el Negocio",
+            description: "Previsibilidad en las entregas, transparencia total con los clientes y mejora continua en la calidad de los lanzamientos de software."
           }
         }
       }

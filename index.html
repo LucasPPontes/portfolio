@@ -39,7 +39,31 @@
       </nav>
 
       <div class="header-actions">
-        <button id="lang-toggle-btn" class="lang-btn" aria-label="Alternar Idioma">EN</button>
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button type="button" class="lang-dropdown-trigger" id="lang-dropdown-trigger" aria-haspopup="listbox" aria-expanded="false" aria-label="Selecione o idioma">
+            <span id="selected-lang-flag"></span>
+            <span id="selected-lang-code">PT</span>
+            <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          
+          <div class="lang-dropdown-menu" id="lang-dropdown-menu" role="listbox">
+            <button type="button" class="lang-dropdown-item active" data-lang="pt" role="option">
+              <span class="flag-wrapper" id="menu-flag-pt"></span>
+              <span class="lang-label">PT</span>
+              <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </button>
+            <button type="button" class="lang-dropdown-item" data-lang="en" role="option">
+              <span class="flag-wrapper" id="menu-flag-en"></span>
+              <span class="lang-label">EN</span>
+              <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </button>
+            <button type="button" class="lang-dropdown-item" data-lang="es" role="option">
+              <span class="flag-wrapper" id="menu-flag-es"></span>
+              <span class="lang-label">ES</span>
+              <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </button>
+          </div>
+        </div>
         <a href="#contact" class="btn btn-primary" id="header-contact-btn">Entre em contato</a>
       </div>
     </div>
