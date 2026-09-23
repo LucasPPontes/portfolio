@@ -6,10 +6,34 @@ const portfolioData = {
       contact: "Contato",
       getInTouch: "Entre em contato"
     },
+    ui: {
+      menu: "Menu",
+      available: "Disponível para projetos",
+      statYears: "anos trabalhando com dados",
+      statProjects: "projetos independentes",
+      statEduValue: "MBA",
+      statEdu: "Data Science & Big Data",
+      aboutLabel: "Sobre",
+      projectsLabel: "Projetos",
+      contactLabel: "Contato",
+      stackLabel: "Stack",
+      spec: [
+        ["Graduação", "Análise e Desenvolvimento de Sistemas"],
+        ["Pós-graduação", "MBA Ciência de Dados e Big Data Analytics"],
+        ["Experiência", "4+ anos"],
+        ["Foco", "Engenharia de Dados · DataOps · BI"]
+      ],
+      filters: { all: "Todos", eng: "Engenharia de Dados", ai: "IA & Big Data", bi: "BI & Analytics" },
+      githubBtn: "Ver no GitHub",
+      copyEmail: "Copiar e-mail",
+      copied: "Copiado",
+      rights: "Todos os direitos reservados.",
+      backToTop: "Voltar ao topo"
+    },
     hero: {
-      badge: "DATA ENGINEER",
-      titleLine1: "ENGENHARIA DE DADOS, BI E",
-      titleGradient: "ARQUITETURAS ESCALÁVEIS",
+      badge: "Engenheiro de Dados · BI",
+      titleLine1: "Engenharia de dados, BI e",
+      titleGradient: "arquiteturas escaláveis.",
       description: "Parceiro estratégico de negócios na conversão de dados brutos em inteligência acionável. Desenvolvo arquiteturas em nuvem e pipelines de alta performance projetados para dar suporte ao crescimento escalável, permitindo que a liderança tome decisões baseadas em dados sólidos e acionáveis.",
       viewProjects: "Ver projetos",
       getInTouch: "Entre em contato"
@@ -68,10 +92,34 @@ const portfolioData = {
       contact: "Contact",
       getInTouch: "Get in touch"
     },
+    ui: {
+      menu: "Menu",
+      available: "Available for projects",
+      statYears: "years working with data",
+      statProjects: "independent projects",
+      statEduValue: "MBA",
+      statEdu: "Data Science & Big Data",
+      aboutLabel: "About",
+      projectsLabel: "Projects",
+      contactLabel: "Contact",
+      stackLabel: "Stack",
+      spec: [
+        ["Bachelor's", "Systems Analysis and Development"],
+        ["Postgrad", "MBA in Data Science & Big Data Analytics"],
+        ["Experience", "4+ years"],
+        ["Focus", "Data Engineering · DataOps · BI"]
+      ],
+      filters: { all: "All", eng: "Data Engineering", ai: "AI & Big Data", bi: "BI & Analytics" },
+      githubBtn: "View on GitHub",
+      copyEmail: "Copy email",
+      copied: "Copied",
+      rights: "All rights reserved.",
+      backToTop: "Back to top"
+    },
     hero: {
-      badge: "DATA ENGINEER",
-      titleLine1: "DATA ENGINEERING, BI AND",
-      titleGradient: "SCALABLE ARCHITECTURES",
+      badge: "Data Engineer · BI",
+      titleLine1: "Data engineering, BI and",
+      titleGradient: "scalable architectures.",
       description: "Strategic business partner converting raw data into actionable intelligence. I design high-performance cloud architectures and pipelines built to support scalable growth, empowering leadership to make decisions grounded in solid, actionable data.",
       viewProjects: "View projects",
       getInTouch: "Get in touch"
@@ -130,10 +178,34 @@ const portfolioData = {
       contact: "Contacto",
       getInTouch: "Ponte en contacto"
     },
+    ui: {
+      menu: "Menú",
+      available: "Disponible para proyectos",
+      statYears: "años trabajando con datos",
+      statProjects: "proyectos independientes",
+      statEduValue: "MBA",
+      statEdu: "Data Science & Big Data",
+      aboutLabel: "Sobre mí",
+      projectsLabel: "Proyectos",
+      contactLabel: "Contacto",
+      stackLabel: "Stack",
+      spec: [
+        ["Grado", "Análisis y Desarrollo de Sistemas"],
+        ["Posgrado", "MBA en Ciencia de Datos y Big Data Analytics"],
+        ["Experiencia", "4+ años"],
+        ["Enfoque", "Ingeniería de Datos · DataOps · BI"]
+      ],
+      filters: { all: "Todos", eng: "Ingeniería de Datos", ai: "IA y Big Data", bi: "BI y Analytics" },
+      githubBtn: "Ver en GitHub",
+      copyEmail: "Copiar correo",
+      copied: "Copiado",
+      rights: "Todos los derechos reservados.",
+      backToTop: "Volver arriba"
+    },
     hero: {
-      badge: "INGENIERO DE DATOS",
-      titleLine1: "INGENIERÍA DE DATOS, BI Y",
-      titleGradient: "ARQUITECTURAS ESCALABLES",
+      badge: "Ingeniero de Datos · BI",
+      titleLine1: "Ingeniería de datos, BI y",
+      titleGradient: "arquitecturas escalables.",
       description: "Socio estratégico de negocios en la conversión de datos brutos en inteligencia accionable. Desarrollo arquitecturas en la nube y pipelines de alto rendimiento diseñados para respaldar el crecimiento escalable, permitiendo a los líderes tomar decisiones basadas en datos sólidos.",
       viewProjects: "Ver proyectos",
       getInTouch: "Ponte en contacto"
@@ -188,6 +260,7 @@ const portfolioData = {
   projects: [
     {
       id: "project-1",
+      category: "eng",
       badge: "Airflow & Data Warehouse",
       image: "images/project-warehouse.jpg",
       githubUrl: "https://github.com/LucasPPontes/pipeline_datawarehouse",
@@ -273,6 +346,7 @@ const portfolioData = {
     },
     {
       id: "project-3",
+      category: "eng",
       badge: "Engenharia de Dados em Tempo Real",
       image: "images/iot-sensor-telemetry.png",
       githubUrl: "https://github.com/LucasPPontes/iac-real-time-data-pipeline",
@@ -358,6 +432,7 @@ const portfolioData = {
     },
     {
       id: "project-4",
+      category: "ai",
       badge: "Big Data & GenAI",
       image: "images/spark-agritech-genai.png",
       githubUrl: "https://github.com/LucasPPontes/agritech-spark-genai",
@@ -443,6 +518,7 @@ const portfolioData = {
     },
     {
       id: "project-8",
+      category: "ai",
       badge: "IA Generativa & RAG",
       image: "images/rag.png",
       githubUrl: "https://github.com/LucasPPontes/rag-assistant",
@@ -528,6 +604,7 @@ const portfolioData = {
     },
     {
       id: "project-5",
+      category: "eng",
       badge: "Engenharia de Dados & Analytics Financeiro",
       image: "images/automacao-financeira.png",
       githubUrl: "https://github.com/LucasPPontes/corefin_analytics",
@@ -613,6 +690,7 @@ const portfolioData = {
     },
     {
       id: "project-2",
+      category: "bi",
       badge: "CRM & Gestão de SLA",
       image: "images/dash-crm-executive.png",
       githubUrl: "https://github.com/LucasPPontes/crm-sla-analytics-hub",
@@ -698,6 +776,7 @@ const portfolioData = {
     },
     {
       id: "project-6",
+      category: "bi",
       badge: "Business Intelligence",
       image: "images/dash-vendas-powerbi.png",
       githubUrl: "https://github.com/LucasPPontes/dashboard_vendas",
@@ -783,6 +862,7 @@ const portfolioData = {
     },
     {
       id: "project-7",
+      category: "bi",
       badge: "Gestão & Qualidade",
       image: "images/dash-acompanhamento-projetos.png",
       githubUrl: "https://github.com/LucasPPontes/dashboard_projetos",
